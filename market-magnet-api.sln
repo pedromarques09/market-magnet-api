@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "market-magnet-api", "market-magnet-api\market-magnet-api.csproj", "{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {063EC876-BF80-4BFC-BF4E-82A4858784FE}
+	EndGlobalSection
+EndGlobal
