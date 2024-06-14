@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("market-magnet-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+67c66de3f6a991c3607588f29f9dbeeeb797bd0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("market-magnet-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("market-magnet-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

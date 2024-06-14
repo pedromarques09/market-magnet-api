@@ -30,6 +30,10 @@ namespace market_magnet_api.Data.Repositories
             return _products.Find<Product>(product => product._id == id).FirstOrDefault();
         }
 
+        public Product GetLatestProduct(string userId)
+        {
+           return _products.Find<Product>(product => product.UserId == userId).SortByDescending(product => product.Codigo).FirstOrDefault();
+        }
         public void Create(Product product)
         {   
             _products.InsertOne(product);
@@ -39,6 +43,30 @@ namespace market_magnet_api.Data.Repositories
         {
             _products.ReplaceOne(p => p._id == product._id, product);
         }
+
+        public IEnumerable<Product> UpdateStock(Payload payload)
+        {
+
+            foreach (var product in payload.Itens)
+            {
+                var productToUpdate = _products.Find<Product>(p => p._id == product.IdProduto).FirstOrDefault();
+                if (payload.IsIncrement == true)
+                {
+                    productToUpdate.QuantidadeEstoque += product.Quantidade;
+                    _products.ReplaceOne(p => p._id == product.IdProduto, productToUpdate);
+                }
+                else
+                {
+                    productToUpdate.QuantidadeEstoque -= product.Quantidade;
+                    _products.ReplaceOne(p => p._id == product.IdProduto, productToUpdate);
+                }
+            }
+                  
+    return _products.Find(productToUpdate => true).ToList();
+
+}
+
+
 
         public void Delete(string id)
         {

@@ -42,24 +42,12 @@ namespace market_magnet_api.Data.Repositories
         {
             _users.DeleteOne(user => user._id == id);
         }
-        public void UpdateFields(string id, Dictionary<string, string> fields)
+
+
+        public void UpdateUser(User user)
         {
-            var updateDefinition = new List<UpdateDefinition<User>>();
-            foreach (var field in fields)
-            {
-                updateDefinition.Add(Builders<User>.Update.Set(field.Key, field.Value));
-            }
-            var update = Builders<User>.Update.Combine(updateDefinition);
-            _users.UpdateOne(user => user._id == id, update);
+            _users.ReplaceOne(u => u._id == user._id, user);
         }
 
-
-        public User UpdateUser(User user)
-        {
-            _users.ReplaceOne(user => user._id == user._id, user);
-            return user;
-        }
-
-     
     }
 }

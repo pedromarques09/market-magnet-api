@@ -28,6 +28,11 @@ namespace market_magnet_api.Services
             return _customerRepository.GetCustomerById(id);
         }
 
+        public Customer GetLastCustomer(string userId)
+        {
+            return _customerRepository.GetLastCustomer(userId);
+        }
+
         public void CreateCustomer(Customer customer)
         {
             _customerRepository.CreateCustomer(customer);

@@ -31,6 +31,11 @@ namespace market_magnet_api.Data.Repositories
             return _customers.Find<Customer>(customer => customer._id == id).FirstOrDefault();
         }
 
+        public Customer GetLastCustomer(string userId)
+        {
+            return _customers.Find<Customer>(customer => customer.UserId == userId).SortByDescending(customer => customer.Codigo).FirstOrDefault();
+        }
+
         public void CreateCustomer(Customer customer)
         {
             _customers.InsertOne(customer);

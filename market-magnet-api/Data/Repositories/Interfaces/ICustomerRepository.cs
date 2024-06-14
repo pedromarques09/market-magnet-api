@@ -1,5 +1,4 @@
 ﻿using market_magnet_api.Models;
-using System.Collections.Generic;
 
 namespace market_magnet_api.Data.Repositories
 {
@@ -8,6 +7,7 @@ namespace market_magnet_api.Data.Repositories
         IEnumerable<Customer> GetAllCustomers();
         IEnumerable<Customer> GetCustomersByUserId(string userId);
         Customer GetCustomerById(string id);
+        Customer GetLastCustomer(string userId);
         void CreateCustomer(Customer customer);
         void UpdateCustomer(Customer customer);
         void DeleteCustomer(string id);
