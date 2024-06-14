@@ -2,14 +2,11 @@
 using market_magnet_api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 namespace market_magnet_api.Controllers
 {
     [Route("api/[controller]")]
+
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -20,7 +17,7 @@ namespace market_magnet_api.Controllers
             _userRepository = userRepository;
         }
 
-        // GET: api/<UserController>s
+        // GET: api/<UserController>
         [HttpGet]
         public IActionResult GetAll()
         {
@@ -28,7 +25,8 @@ namespace market_magnet_api.Controllers
             return Ok(users);  
         }
 
-        // GET api/<UserController>/5
+        // GET api/<UserController>
+        [Authorize]
         [HttpGet("{id}")]
         public IActionResult GetUserById(string id)
         {
@@ -64,22 +62,24 @@ namespace market_magnet_api.Controllers
                 return StatusCode(500, "Erro interno do servidor: " + ex.Message);
             }
         }
-        // PUT api/<UserController>/5
+        // PUT api/<UserController>
+        [Authorize]
         [HttpPut("{id}")]
-        public IActionResult Put(string id, [FromBody] Dictionary<string, string> fields)
+        public IActionResult UpdateUser(string id, [FromBody] User user)
         {
-            var user = _userRepository.GetUserById(id);
-            if (user != null)
-            {
-                _userRepository.UpdateFields(id, fields);
-                return Ok(user);
-            }
-            else
+            var existingUser = _userRepository.GetUserById(id);
+            if (existingUser == null)
             {
                 return NotFound();
             }
+
+            user._id = existingUser._id;
+            _userRepository.UpdateUser(user);
+            return NoContent();
         }
-        // DELETE api/<UserController>/5
+
+
+        // DELETE api/<UserController>
         [HttpDelete("{id}")]
         public IActionResult Delete(string id)
         {

@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace market_magnet_api.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
@@ -18,6 +19,7 @@ namespace market_magnet_api.Controllers
             _authService = authService;
         }
 
+        // POST api/login
         [HttpPost]
         public IActionResult Post([FromBody] LoginRequest loginRequest)
         {
@@ -29,10 +31,8 @@ namespace market_magnet_api.Controllers
 
             var token = _authService.GenerateJwtToken(user);
             var refreshToken = _authService.GenerateRefreshToken();
-
             user.RefreshToken = refreshToken;
             user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
-
             _loginRepository.UpdateUser(user);
 
             return Ok(new
@@ -43,6 +43,7 @@ namespace market_magnet_api.Controllers
             });
         }
 
+        // POST api/login/refresh
         [HttpPost("refresh")]
         public IActionResult Refresh([FromBody] RefreshTokenRequest refreshTokenRequest)
         {
@@ -54,10 +55,8 @@ namespace market_magnet_api.Controllers
 
             var newToken = _authService.GenerateJwtToken(user);
             var newRefreshToken = _authService.GenerateRefreshToken();
-
             user.RefreshToken = newRefreshToken;
             user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
-
             _loginRepository.UpdateUser(user);
 
             return Ok(new

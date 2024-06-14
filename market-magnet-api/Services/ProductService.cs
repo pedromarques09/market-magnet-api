@@ -29,6 +29,11 @@ namespace market_magnet_api.Services
             return _productRepository.GetById(id);
         }
 
+        public Product GetLatestProduct(string userId)
+        {
+            return _productRepository.GetLatestProduct(userId);
+        }
+
         public void CreateProduct(Product product)
         {
             _productRepository.Create(product);
@@ -37,6 +42,11 @@ namespace market_magnet_api.Services
         public void UpdateProduct(Product product)
         {
             _productRepository.Update(product);
+        }
+
+        public IEnumerable<Product> UpdateStock(Payload payload)
+        {
+            return _productRepository.UpdateStock(payload);
         }
 
         public void DeleteProduct(string id)

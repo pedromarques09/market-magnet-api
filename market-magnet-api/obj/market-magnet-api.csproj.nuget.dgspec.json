@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Pedro\\Documents\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj": {}
+    "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Pedro\\Documents\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj": {
+    "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Pedro\\Documents\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
+        "projectUniqueName": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
         "projectName": "market-magnet-api",
-        "projectPath": "C:\\Users\\Pedro\\Documents\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
+        "projectPath": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
         "packagesPath": "C:\\Users\\Pedro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Pedro\\Documents\\market-magnet-api\\market-magnet-api\\obj\\",
+        "outputPath": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",

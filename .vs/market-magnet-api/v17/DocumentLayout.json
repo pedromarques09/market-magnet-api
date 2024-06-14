@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Pedro\\Documents\\market-magnet-api\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|c:\\users\\pedro\\desktop\\market-magnet-api\\market-magnet-api\\data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|solutionrelative:market-magnet-api\\data\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|c:\\users\\pedro\\desktop\\market-magnet-api\\market-magnet-api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|solutionrelative:market-magnet-api\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|c:\\users\\pedro\\desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|solutionrelative:market-magnet-api\\market-magnet-api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|c:\\users\\pedro\\desktop\\market-magnet-api\\market-magnet-api\\data\\repositories\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|solutionrelative:market-magnet-api\\data\\repositories\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|c:\\users\\pedro\\desktop\\market-magnet-api\\market-magnet-api\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB96F2D7-006B-456C-B61F-5D48D8E3EAA7}|market-magnet-api\\market-magnet-api.csproj|solutionrelative:market-magnet-api\\data\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 72,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Data\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "market-magnet-api\\Data\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Data\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "market-magnet-api\\Data\\Repositories\\ProductRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAwwCUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:30:14.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "market-magnet-api",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
+              "RelativeDocumentMoniker": "market-magnet-api\\market-magnet-api.csproj",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
+              "RelativeToolTip": "market-magnet-api\\market-magnet-api.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-14T17:02:21.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "market-magnet-api\\Models\\Customer.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Models\\Customer.cs",
+              "RelativeToolTip": "market-magnet-api\\Models\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:02:10.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Data\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "market-magnet-api\\Data\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Data\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "market-magnet-api\\Data\\Repositories\\UserRepository.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwC4AAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T17:01:17.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Data\\Repositories\\SaleRepository.cs",
+              "RelativeDocumentMoniker": "market-magnet-api\\Data\\Repositories\\SaleRepository.cs",
+              "ToolTip": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\Data\\Repositories\\SaleRepository.cs",
+              "RelativeToolTip": "market-magnet-api\\Data\\Repositories\\SaleRepository.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAowCcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-14T16:59:27.381Z",
+              "EditorCaption": ""
             }
           ]
         }

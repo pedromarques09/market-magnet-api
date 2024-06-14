@@ -1,11 +1,12 @@
 ﻿using market_magnet_api.Models;
-using market_magnet_api.Services;
 using market_magnet_api.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
 
 namespace market_magnet_api.Controllers
 {
+
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
@@ -25,11 +26,24 @@ namespace market_magnet_api.Controllers
             return Ok(customers);
         }
 
+        // GET: api/Customer/user/{userId}
         [HttpGet("user/{userId}")]
         public ActionResult<IEnumerable<Customer>> GetByUserId(string userId)
         {
             var customers = _customerService.GetCustomersByUserId(userId);
             return Ok(customers);
+        }
+
+        // GET: api/Customer/user/last/{userId} - pegar ultimo cliente
+        [HttpGet("user/last/{userId}")]
+        public ActionResult<Customer> GetLastCustomer(string userId)
+        {
+            var customer = _customerService.GetLastCustomer(userId);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return Ok(customer);
         }
 
         // GET: api/Customer/{id}
@@ -76,7 +90,6 @@ namespace market_magnet_api.Controllers
             {
                 return NotFound();
             }
-
             _customerService.DeleteCustomer(id);
             return NoContent();
         }

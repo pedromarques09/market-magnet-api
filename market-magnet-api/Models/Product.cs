@@ -3,7 +3,7 @@
     public class Product
 
     {
-        public Product(string codigo, string referencias, string codigosBarras, string descricao, string unidadeMedida, decimal valorCusto, decimal markup, decimal valorVenda, decimal quantidadeEstoque, string userId)
+        public Product(int codigo, string referencias, string codigosBarras, string descricao, string unidadeMedida, decimal valorCusto, decimal markup, decimal valorVenda, decimal quantidadeEstoque, string userId)
         {
             _id = Guid.NewGuid().ToString();
             Codigo = codigo;
@@ -19,7 +19,7 @@
         }
 
         public string _id { get; set; }
-        public string Codigo { get; set; }
+        public int Codigo { get; set; }
         public string Referencias { get; set; }
         public string CodigosBarras { get; set; }
         public string Descricao { get; set; }

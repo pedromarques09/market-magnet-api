@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AU/ayFFxSZlaoCj1iyLelF/yjLsmTAZWKR0Wz3bbP37ZAIw17R6gzriVVLkR7h0H0nxiEZ1IU/nn2J+5H5fppQ==",
+  "dgSpecHash": "4P6ry6rh/phkoCGBDT1lqyuyVrh1QUW0ocY35rT/G1Lgw9DV2fQLRUdkvBeVOlD4Y7/V4eDwVALIjVz8ers1XQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Pedro\\Documents\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
+  "projectFilePath": "C:\\Users\\Pedro\\Desktop\\market-magnet-api\\market-magnet-api\\market-magnet-api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pedro\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Pedro\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",
